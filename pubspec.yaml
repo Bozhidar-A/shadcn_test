@@ -38,10 +38,21 @@ dependencies:
   cupertino_icons: ^1.0.8
 
   #my
+  #auth
+  appwrite: ^12.0.0
+
+  #ui
   shadcn_ui: ^0.17.6
-  solidart: ^1.5.4
   lucide_icons_flutter: ^1.2.5
+
+  #state management
+  solidart: ^1.5.4
+
+  #router
   go_router: ^14.6.3
+
+  #utils
+  flutter_dotenv: ^5.2.1
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +79,9 @@ flutter:
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
+
+  assets:
+    - .env
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

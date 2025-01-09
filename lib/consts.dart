@@ -5,4 +5,5 @@ class ROUTE_URLS {
   static const details = '/details';
   static const camera = '/camera';
   static const profile = '/profile';
+  static const register = '/register';
 }

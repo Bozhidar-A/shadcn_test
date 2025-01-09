@@ -1,9 +1,10 @@
 part of shadcn_ui_example;
 
 /// Widget for the root/initial pages in the bottom navigation bar.
-class RootScreen extends StatelessWidget {
+class ScannerScreen extends StatelessWidget {
   /// Creates a RootScreen
-  const RootScreen({required this.label, required this.detailsPath, Key? key})
+  const ScannerScreen(
+      {required this.label, required this.detailsPath, Key? key})
       : super(key: key);
 
   /// The label
@@ -29,6 +30,7 @@ class RootScreen extends StatelessWidget {
               onPressed: () => context.go(detailsPath),
               child: const Text('View details'),
             ),
+            Text(currUser.value?.email ?? "No user"),
           ],
         ),
       ),
